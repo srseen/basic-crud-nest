@@ -7,12 +7,12 @@ import {
   Put,
   Delete,
 } from '@nestjs/common';
-import { ItemsService } from './item.service';
+import { ItemService } from './item.service';
 import { CreateItemDto } from './dto/create-item.dto';
 
 @Controller('items')
-export class ItemsController {
-  constructor(private readonly service: ItemsService) {}
+export class ItemController {
+  constructor(private readonly service: ItemService) {}
 
   @Post()
   create(@Body() dto: CreateItemDto) {

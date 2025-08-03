@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ItemsModule } from './item/item.module';
+import { ItemModule } from './item/item.module';
 import { MongooseModule } from '@nestjs/mongoose';
 
 @Module({
@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     MongooseModule.forRoot(
       process.env.MONGO_URI || 'mongodb://127.0.0.1:27017/nestcrud',
     ),
-    ItemsModule,
+    ItemModule,
   ],
   controllers: [AppController],
   providers: [AppService],

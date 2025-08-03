@@ -5,7 +5,7 @@ import { Item } from './schemas/item.schema';
 import { CreateItemDto } from './dto/create-item.dto';
 
 @Injectable()
-export class ItemsService {
+export class ItemService {
   constructor(
     @InjectModel(Item.name) private readonly itemModel: Model<Item>,
   ) {}
