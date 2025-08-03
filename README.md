@@ -14,7 +14,7 @@
 ### 1. Clone project
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/srseen/basic-crud-nest.git
 cd nest-mongo-crud
 ```
 
