@@ -15,7 +15,7 @@
 
 ```bash
 git clone https://github.com/srseen/basic-crud-nest.git
-cd nest-mongo-crud
+cd basic-crud-nest
 ```
 
 ### 2. Build and Run with Docker Compose
