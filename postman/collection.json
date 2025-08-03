@@ -1,0 +1,84 @@
+{
+  "info": {
+    "_postman_id": "crud-nest-mongo-collection",
+    "name": "Nest Mongo CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Item",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Test Item\",\n  \"description\": \"Test Description\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/items",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items"]
+        }
+      }
+    },
+    {
+      "name": "Get All Items",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/items",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items"]
+        }
+      }
+    },
+    {
+      "name": "Get One Item",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/items/{{itemId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items", "{{itemId}}"]
+        }
+      }
+    },
+    {
+      "name": "Update Item",
+      "request": {
+        "method": "PUT",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated Name\",\n  \"description\": \"Updated Description\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/items/{{itemId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items", "{{itemId}}"]
+        }
+      }
+    },
+    {
+      "name": "Delete Item",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/items/{{itemId}}",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["items", "{{itemId}}"]
+        }
+      }
+    }
+  ]
+}
