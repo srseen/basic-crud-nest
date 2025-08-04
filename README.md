@@ -14,8 +14,8 @@
 ### 1. Clone project
 
 ```bash
-git clone <repo-url>
-cd nest-mongo-crud
+git clone https://github.com/srseen/basic-crud-nest.git
+cd basic-crud-nest
 ```
 
 ### 2. Build and Run with Docker Compose
@@ -26,7 +26,7 @@ docker compose up --build
 
 > API จะพร้อมใช้งานที่: [http://localhost:3000/items](http://localhost:3000/items)
 
-## 📦 API Endpoints
+## API Endpoints
 
 | Method | Endpoint     | Description     |
 | ------ | ------------ | --------------- |
